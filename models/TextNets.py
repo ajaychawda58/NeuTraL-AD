@@ -16,7 +16,7 @@
 
 import torch
 import torch.nn as nn
-from torchnlp.word_to_vector import GloVe
+#from torchnlp.word_to_vector import GloVe
 
 
 class MyEmbedding(nn.Embedding):

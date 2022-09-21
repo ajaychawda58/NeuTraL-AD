@@ -19,8 +19,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.nn import BatchNorm1d
 from torch.nn import Sequential, Linear, ReLU
-from torch_geometric.nn import GINConv, global_add_pool, global_mean_pool
-from torch_scatter import scatter
+#from torch_geometric.nn import GINConv, global_add_pool, global_mean_pool
+#from torch_scatter import scatter
 import torch.nn.init as init
 
 class GraphNorm(nn.Module):

@@ -23,11 +23,11 @@
 # The date of modifications: April, 2021
 
 from pathlib import Path
-from torch_geometric.datasets import TUDataset
+#from torch_geometric.datasets import TUDataset
 from sklearn.model_selection import train_test_split, StratifiedKFold
-import torch_geometric.transforms as T
+#import torch_geometric.transforms as T
 import torch
-from torch_geometric.utils import degree
+#from torch_geometric.utils import degree
 import json
 import numpy as np
 

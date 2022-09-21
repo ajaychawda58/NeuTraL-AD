@@ -20,8 +20,8 @@
 # cf. 3rd-party-licenses.txt file in the root directory of this source tree.
 
 
-from torchnlp.samplers import BucketBatchSampler
-from torchnlp.encoders.text.text_encoder import stack_and_pad_tensors
+#from torchnlp.samplers import BucketBatchSampler
+#from torchnlp.encoders.text.text_encoder import stack_and_pad_tensors
 
 import torch
 from abc import ABC, abstractmethod

@@ -114,3 +114,42 @@ def norm_kdd_data(train_data, test_data, continuous_idx):
     test_normalized = np.concatenate([test_data[:, symbolic_idx], test_continual], 1)
 
     return train_normalized, test_normalized
+
+def car_insurance(path):
+    trainset = pd.read_csv('DATA/car_insurance/train_OH.csv')
+    train_data = np.array(trainset.values)
+    train_labels = pd.read_csv('DATA/car_insurance/train_OH_Y.csv')
+    train_label = np.array(train_labels.values)
+
+    testset = pd.read_csv('DATA/car_insurance/test_OH.csv')
+    test_data = np.array(testset.values)
+    test_labels = pd.read_csv('DATA/car_insurance/test_OH_Y.csv')
+    test_label = np.array(test_labels.values)
+
+    return train_data, train_label, test_data, test_label
+
+def vehicle_insurance(path):
+    trainset = pd.read_csv('DATA/vehicle_insurance/train_OH.csv')
+    train_data = np.array(trainset.values)
+    train_labels = pd.read_csv('DATA/vehicle_insurance/train_OH_Y.csv')
+    train_label = np.array(train_labels.values)
+
+    testset = pd.read_csv('DATA/vehicle_insurance/test_OH.csv')
+    test_data = np.array(testset.values)
+    test_labels = pd.read_csv('DATA/vehicle_insurance/test_OH_Y.csv')
+    test_label = np.array(test_labels.values)
+
+    return train_data, train_label, test_data, test_label
+
+def vehicle_claims(path):
+    trainset = pd.read_csv('DATA/vehicle_claims/train_OH.csv')
+    train_data = np.array(trainset.values)
+    train_labels = pd.read_csv('DATA/vehicle_claims/train_OH_Y.csv')
+    train_label = np.array(train_labels.values)
+
+    testset = pd.read_csv('DATA/vehicle_claims/test_OH.csv')
+    test_data = np.array(testset.values)
+    test_labels = pd.read_csv('DATA/vehicle_claims/test_OH_Y.csv')
+    test_label = np.array(test_labels.values)
+
+    return train_data, train_label, test_data, test_label

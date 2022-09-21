@@ -129,7 +129,7 @@ class runTextExperiment():
 
         return val_auc, test_auc, test_ap,test_f1,scores,labels
 
-from torch_geometric.data import DataLoader as Graph_DataLoader
+#from torch_geometric.data import DataLoader as Graph_DataLoader
 class runGraphExperiment():
 
     def __init__(self, model_configuration, exp_path):

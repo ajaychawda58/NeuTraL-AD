@@ -23,17 +23,17 @@
 # The date of modifications: April, 2021
 
 from .torchnlp_dataset import TorchnlpDataset
-from torchnlp.datasets.dataset import Dataset
-from torchnlp.encoders.text import SpacyEncoder
-from torchnlp.utils import datasets_iterator
-from torchnlp.encoders.text.default_reserved_tokens import DEFAULT_SOS_TOKEN
+#from torchnlp.datasets.dataset import Dataset
+#from torchnlp.encoders.text import SpacyEncoder
+#from torchnlp.utils import datasets_iterator
+#from torchnlp.encoders.text.default_reserved_tokens import DEFAULT_SOS_TOKEN
 from torch.utils.data import Subset
-from nltk.corpus import reuters
-from nltk import word_tokenize
+#from nltk.corpus import reuters
+#from nltk import word_tokenize
 
 import torch
-import nltk
-from nltk.corpus import stopwords
+#import nltk
+#from nltk.corpus import stopwords
 import string
 import re
 

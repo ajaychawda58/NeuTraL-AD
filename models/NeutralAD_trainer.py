@@ -66,10 +66,10 @@ class NeutralAD_trainer:
                 except:
                     samples = data
                     labels = data.y!=cls
-                z= model(samples)
+                z= model(samples)                
                 score = self.loss_fun(z,eval=True)
-                loss_in += score[labels == 0].sum()
-                loss_out += score[labels == 1].sum()
+                loss_in += score[labels[:,0] == 0].sum()
+                loss_out += score[labels[:,0] == 1].sum()
                 target_all.append(labels)
                 score_all.append(score)
 

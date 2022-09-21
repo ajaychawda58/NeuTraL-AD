@@ -100,6 +100,12 @@ def load_data(data_name,cls,cls_type):
         train, train_label, test, test_label = CIFAR10_feat(cls,data_path)
     elif data_name == 'fmnist':
         train, train_label, test, test_label = FMNIST_Dataset(cls,data_path)
+    elif data_name == 'car_insurance':
+        train, train_label, test, test_label = car_insurance(data_path)
+    elif data_name == 'vehicle_insurance':
+        train, train_label, test, test_label = vehicle_insurance(data_path)
+    elif data_name == 'vehicle_claims':
+        train, train_label, test, test_label = vehicle_claims(data_path)
     elif data_name == 'reuters':
         dataset = Reuters_Dataset(cls,data_path)
         return dataset

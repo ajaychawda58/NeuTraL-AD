@@ -28,7 +28,15 @@ class KDD():
 class KDDrev():
     data_name = "kddrev"
     num_cls =1
-
+class car_insurance():
+    data_name = "car_insurance"
+    num_cls = 1
+class vehicle_insurance():
+    data_name = "vehicle_insurance"
+    num_cls = 1
+class vehicle_claims():
+    data_name = "vehicle_claims"
+    num_cls = 1
 # time series datasets
 class arabic_digits():
     data_name = "arabic_digits"
